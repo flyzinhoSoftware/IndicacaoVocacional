@@ -5,10 +5,10 @@ class App {
     protected $params = [];
 
     public function __construct() {
-        $url = $this->parseUrl();
+        $url = $this->parseUrl() ?: [];
 
         // Verificar se o controller existe
-        if (file_exists('app/Controllers/' . $url[0] . 'Controller.php')) {
+        if (!empty($url) && file_exists('app/Controllers/' . $url[0] . 'Controller.php')) {
             $this->controller = $url[0] . 'Controller';
             unset($url[0]);
         }

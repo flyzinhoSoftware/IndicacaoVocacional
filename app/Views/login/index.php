@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Indicação Vocacional</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/projectos/IndicacaoVocacional/login/authenticate" method="post">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

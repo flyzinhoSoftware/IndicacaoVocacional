@@ -1,6 +1,6 @@
 <?php
 class App {
-    protected $controller = 'HomeController';
+    protected $controller = 'LoginController';
     protected $method = 'index';
     protected $params = [];
 
@@ -8,12 +8,12 @@ class App {
         $url = $this->parseUrl();
 
         // Verificar se o controller existe
-        if (file_exists('../app/Controllers/' . $url[0] . 'Controller.php')) {
+        if (file_exists('app/Controllers/' . $url[0] . 'Controller.php')) {
             $this->controller = $url[0] . 'Controller';
             unset($url[0]);
         }
 
-        require_once '../app/Controllers/' . $this->controller . '.php';
+        require_once 'app/Controllers/' . $this->controller . '.php';
 
         $this->controller = new $this->controller;
 

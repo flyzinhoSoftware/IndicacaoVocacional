@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indicação Vocacional</title>
-    <link href="/projectos/IndicacaoVocacional/public/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/projectos/IndicacaoVocacional/public/assets/css/select2.min.css" rel="stylesheet">
-    <link href="/projectos/IndicacaoVocacional/public/assets/css/app.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>public/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>public/assets/css/select2.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>public/assets/css/app.css" rel="stylesheet">
     <style>
         body { background:#f7f7f7; }
         header { background:#1d4e89; color:#fff; }
@@ -19,15 +19,15 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-        <a class="navbar-brand" href="/projectos/IndicacaoVocacional/">Indicação Vocacional</a>
+        <a class="navbar-brand" href="<?php echo BASE_URL; ?>">Indicação Vocacional</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/projectos/IndicacaoVocacional/">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="/projectos/IndicacaoVocacional/login">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="/projectos/IndicacaoVocacional/home">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>home">Dashboard</a></li>
             </ul>
         </div>
     </nav>
